@@ -23,6 +23,7 @@ public class Enemy : MonoBehaviour {
         ParticleSystem.Particle[] particles = new ParticleSystem.Particle[1];
         other.GetComponent<ParticleSystem>().GetParticles(particles);
         GameObject Effect = Instantiate(CollisionEffect, particles[0].position, Quaternion.Euler(particles[0].rotation3D));
-        Destroy(Effect, 0.1f);
+        Destroy(Effect, 1f);
+        particles[0].remainingLifetime = 0;
     }
 }
