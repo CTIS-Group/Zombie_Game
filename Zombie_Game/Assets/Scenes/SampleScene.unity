@@ -145,7 +145,7 @@ Transform:
   - {fileID: 1281789245}
   - {fileID: 1998153760}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!114 &7280997
 MonoBehaviour:
@@ -311,80 +311,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 60, y: 0, z: 0}
---- !u!1001 &333016985
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4251539826702316, guid: b65f9d0cac4e2014a83e61dd55a0da20, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -2.5398016
-      objectReference: {fileID: 0}
-    - target: {fileID: 4251539826702316, guid: b65f9d0cac4e2014a83e61dd55a0da20, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 4251539826702316, guid: b65f9d0cac4e2014a83e61dd55a0da20, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 1.8117887
-      objectReference: {fileID: 0}
-    - target: {fileID: 4251539826702316, guid: b65f9d0cac4e2014a83e61dd55a0da20, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4251539826702316, guid: b65f9d0cac4e2014a83e61dd55a0da20, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4251539826702316, guid: b65f9d0cac4e2014a83e61dd55a0da20, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4251539826702316, guid: b65f9d0cac4e2014a83e61dd55a0da20, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4251539826702316, guid: b65f9d0cac4e2014a83e61dd55a0da20, type: 2}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 198765150600854984, guid: b65f9d0cac4e2014a83e61dd55a0da20,
-        type: 2}
-      propertyPath: InitialModule.startColor.maxColor.r
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 198765150600854984, guid: b65f9d0cac4e2014a83e61dd55a0da20,
-        type: 2}
-      propertyPath: InitialModule.startColor.maxColor.g
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 198765150600854984, guid: b65f9d0cac4e2014a83e61dd55a0da20,
-        type: 2}
-      propertyPath: InitialModule.startColor.maxColor.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 198765150600854984, guid: b65f9d0cac4e2014a83e61dd55a0da20,
-        type: 2}
-      propertyPath: playOnAwake
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 198765150600854984, guid: b65f9d0cac4e2014a83e61dd55a0da20,
-        type: 2}
-      propertyPath: CollisionModule.enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 198765150600854984, guid: b65f9d0cac4e2014a83e61dd55a0da20,
-        type: 2}
-      propertyPath: CollisionModule.type
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: b65f9d0cac4e2014a83e61dd55a0da20, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1 &488219071
 GameObject:
   m_ObjectHideFlags: 0
@@ -557,7 +485,7 @@ Transform:
   - {fileID: 1714269799}
   - {fileID: 1005358905}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &993424836
 GameObject:
@@ -642,7 +570,7 @@ Transform:
   m_LocalScale: {x: 100, y: 0.5, z: 100}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1005358904
 GameObject:
@@ -741,7 +669,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2661029fe51540146a75e0a185ef7cf2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HitsToDie: 3
+  Health: 100
+  CollisionEffect: {fileID: 1200306688322388, guid: efc5df6a2cc12da40b0903c6439857b2,
+    type: 2}
 --- !u!1 &1281789244
 GameObject:
   m_ObjectHideFlags: 0
@@ -1055,7 +985,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2661029fe51540146a75e0a185ef7cf2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HitsToDie: 3
+  Health: 100
+  CollisionEffect: {fileID: 1200306688322388, guid: efc5df6a2cc12da40b0903c6439857b2,
+    type: 2}
 --- !u!1 &1767757082
 GameObject:
   m_ObjectHideFlags: 0

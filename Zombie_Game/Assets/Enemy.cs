@@ -5,13 +5,24 @@ using UnityEngine;
 public class Enemy : MonoBehaviour {
 
     [SerializeField]
-    int HitsToDie = 3;
-
+    float Health = 100;
+    [SerializeField]
+    GameObject CollisionEffect;
     void OnParticleCollision(GameObject other)
     {
+        DisplayCollisionEffect(other);
         Destroy(other);
-        HitsToDie--;
-        if (HitsToDie <= 0)
+
+        Health -= other.GetComponent<Bullet>().Damage;
+        if (Health <= 0)
             Destroy(gameObject);
+    }
+
+    private void DisplayCollisionEffect(GameObject other)
+    {
+        ParticleSystem.Particle[] particles = new ParticleSystem.Particle[1];
+        other.GetComponent<ParticleSystem>().GetParticles(particles);
+        GameObject Effect = Instantiate(CollisionEffect, particles[0].position, Quaternion.Euler(particles[0].rotation3D));
+        Destroy(Effect, 0.1f);
     }
 }
