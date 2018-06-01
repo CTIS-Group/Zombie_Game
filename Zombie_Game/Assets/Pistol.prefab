@@ -227,6 +227,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Name: Pistol
-  BulletEFX: {fileID: 1954722289343590, guid: b65f9d0cac4e2014a83e61dd55a0da20, type: 2}
+  BulletFX: {fileID: 1954722289343590, guid: b65f9d0cac4e2014a83e61dd55a0da20, type: 2}
   FireRate: 5
-  BulletLeft: 5000
+  BulletLeft: 100
