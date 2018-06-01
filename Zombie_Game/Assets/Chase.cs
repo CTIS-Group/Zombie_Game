@@ -7,8 +7,6 @@ public class Chase : MonoBehaviour {
 
     GameObject PlayerToFollow;
     [SerializeField]
-    float MovementSpeed = 5f;
-    [SerializeField]
     NavMeshAgent agent;
 
 	// Use this for initialization

@@ -39,7 +39,7 @@ GameObject:
   - component: {fileID: 114287808162175376}
   m_Layer: 0
   m_Name: Pistol
-  m_TagString: Untagged
+  m_TagString: Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -229,4 +229,3 @@ MonoBehaviour:
   Name: Pistol
   BulletFX: {fileID: 1954722289343590, guid: b65f9d0cac4e2014a83e61dd55a0da20, type: 2}
   FireRate: 5
-  BulletLeft: 100
