@@ -5,27 +5,24 @@ using UnityEngine;
 public class ClickPosition : MonoBehaviour
 {
 
-    public GameObject Tester;
-    GameObject TesterClone;
+    public Vector3 cursorPosition = -Vector3.one;
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
-        {
-            Vector3 PositionClick = -Vector3.one;
-
-            Plane plane = new Plane(Vector3.up, 0f);
+            
+            Plane plane = new Plane(Vector3.up, 0f); // <--- Can set the offset here!
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             float DistanceToPlane;
 
+        //Get Position
             if (plane.Raycast(ray, out DistanceToPlane))
             {
-                PositionClick = ray.GetPoint(DistanceToPlane);
+                cursorPosition = ray.GetPoint(DistanceToPlane);
             }
 
-            Debug.Log(PositionClick);
+            //Print Location
+        if (Input.GetMouseButtonDown(0)){ Debug.Log(cursorPosition);}
 
-            TesterClone = Instantiate(Tester, PositionClick+new Vector3(5f,0,0), Quaternion.Euler(0, 0, 0)) as GameObject;
-        }
+        cursorPosition += new Vector3(5.8f, 0, 0); //offset
     }
 }
