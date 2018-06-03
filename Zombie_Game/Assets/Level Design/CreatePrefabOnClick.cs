@@ -6,26 +6,26 @@ public class CreatePrefabOnClick : MonoBehaviour
 {
 
     GameObject TesterClone;
-    public GameObject Position;
-    public GameObject Tester;
+    public GameObject Manager;
+    public GameObject Object;
 
     void Start()
     {
-        TesterClone = Instantiate(Tester, new Vector3(0, 0, 0), Quaternion.Euler(0, 0, 0)) as GameObject;
+        TesterClone = Instantiate(Object, new Vector3(0, 0, 0), Quaternion.Euler(0, 0, 0)) as GameObject;
     }
 
     // Update is called once per frame
     void Update()
     {
 
-        ClickPosition mousePosition = Position.GetComponent<ClickPosition>();
-        TesterClone.transform.position = mousePosition.cursorPosition;
-
+        SnapManager Position = Manager.GetComponent<SnapManager>();
+        TesterClone.transform.position = Position.objectPosition;
+        
         if (Input.GetMouseButtonDown(0))
         {
-            Debug.Log("Creator -> " + mousePosition.cursorPosition);
+            Debug.Log("Creator -> " + Position.objectPosition);
 
-            TesterClone = Instantiate(Tester, mousePosition.cursorPosition, Quaternion.Euler(0, 0, 0)) as GameObject;
+            TesterClone = Instantiate(Object, Position.objectPosition, Quaternion.Euler(0, 0, 0)) as GameObject;
         }
     }
 }

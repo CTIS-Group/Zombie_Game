@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ClickPosition : MonoBehaviour
+public class CursorManager : MonoBehaviour
 {
 
     public Vector3 cursorPosition = -Vector3.one;
@@ -23,6 +23,6 @@ public class ClickPosition : MonoBehaviour
             //Print Location
         if (Input.GetMouseButtonDown(0)){ Debug.Log(cursorPosition);}
 
-        cursorPosition += new Vector3(5.8f, 0, 0); //offset
+        //cursorPosition += new Vector3(5.8f, 0, 0); //offset
     }
 }
