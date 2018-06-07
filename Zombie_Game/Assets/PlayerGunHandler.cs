@@ -28,8 +28,8 @@ public class PlayerGunHandler : MonoBehaviour
         foreach (GameObject gun in Guns)
         {
             GunIndex[gun.GetComponent<Gun>().Name] = i;
-            isGunHad[i] = false;
-            BulletCount[i] = 0;
+            isGunHad[i] = true;
+            BulletCount[i] = 1000;
             i++;
         }
         ActivateGun();
@@ -38,7 +38,6 @@ public class PlayerGunHandler : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        print("Pistol bullets : " + BulletCount[0] + "Sniper bullets : " + BulletCount[1]);
         SwitchWeapons();
         Fire();
     }

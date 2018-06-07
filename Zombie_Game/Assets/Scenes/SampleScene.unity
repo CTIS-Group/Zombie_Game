@@ -439,7 +439,14 @@ Prefab:
       propertyPath: m_RootOrder
       value: 7
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 114633388562684602, guid: 3ad019fab6f45ad40b0f98e3f52ac2e2,
+        type: 2}
+      propertyPath: ParticleFX
+      value: 
+      objectReference: {fileID: 1790816252291002, guid: a54f155c43f1bc046841e7ff8a0229fd,
+        type: 2}
+    m_RemovedComponents:
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: 3ad019fab6f45ad40b0f98e3f52ac2e2, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &966783929
@@ -850,7 +857,7 @@ MonoBehaviour:
   - {fileID: 1787274349237170, guid: 24f5563fb1396d44fbc95c980b2ab09c, type: 2}
   - {fileID: 1546128123271954, guid: 7dd9ee027bd650e488a1d54d91045b6c, type: 2}
   PickUpFX: {fileID: 1790816252291002, guid: a54f155c43f1bc046841e7ff8a0229fd, type: 2}
-  Delay: 10
+  Delay: 30
 --- !u!4 &1463210763
 Transform:
   m_ObjectHideFlags: 0

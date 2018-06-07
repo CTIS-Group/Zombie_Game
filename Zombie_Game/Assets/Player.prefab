@@ -70,7 +70,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4348381247268322}
-  - component: {fileID: 114876094021464374}
+  - component: {fileID: 114633388562684602}
   - component: {fileID: 114013783061732272}
   - component: {fileID: 54108095067379256}
   - component: {fileID: 65528611470109036}
@@ -406,7 +406,7 @@ MonoBehaviour:
   - {fileID: 1787274349237170, guid: 24f5563fb1396d44fbc95c980b2ab09c, type: 2}
   - {fileID: 1546128123271954, guid: 7dd9ee027bd650e488a1d54d91045b6c, type: 2}
   GunPosition: {fileID: 1999311275047682}
---- !u!114 &114876094021464374
+--- !u!114 &114633388562684602
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -414,7 +414,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1310138392120784}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 686519750fa2d0e4da7e15c3a2b00726, type: 3}
+  m_Script: {fileID: 11500000, guid: ef4ba4bb37d0822468fa42dab6505993, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   MovementSpeed: 10
